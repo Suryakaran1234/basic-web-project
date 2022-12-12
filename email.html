@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halloween Store</title>
+    <link rel="stylesheet" href="styles/email.css" />
+      <link
+      rel="shortcut icon"
+      href="images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="card">
+      <header>
+        <img src="/images/pumpkin.gif" alt="Pumpkin" class="nav_img" />
+        <h1>The Halloween Store</h1>
+        <h2>For the little Goblin in all of us!</h2>
+      </header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products/index.html">Product List</a>
+        <a href="personal">Personal</a>
+        <a href="decorating_ideas">Decorating Ideas</a>
+        <a href="email.html" class="active">Join Email</a>
+      </nav>
+      <main>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/products/props.html">Props</a></li>
+            <li><a href="/products/constumes.html">Costumes</a></li>
+            <li><a href="/products/special.html">Special FX</a></li>
+            <li><a href="/products/masks.html">Masks</a></li>
+          </ul>
+        </div>
+        <div class="main-content">
+          <h2>Please enter the following information:</h2>
+          <form>
+            <div class="form-input">
+              <label for="firstname">First Name: </label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                autofocus
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="lastname">Last Name: </label>
+              <input name="lastname" type="text" id="lastname" required />
+            </div>
+            <div class="form-input">
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-input">
+              <label for="zipcode"> Zip Code: </label>
+              <input
+                type="text"
+                pattern="[0-9]*"
+                max="6"
+                name="zipcode"
+                id="zipcode"
+                placeholder="Optional but appreciated: 99999"
+              />
+            </div>
+            <button class="btn">
+              <a href="subscribe.html" class="btn-link">Subscribe</a>
+            </button>
+          </form>
+        </div>
+      </main>
+      <footer>&copy; 2018 Ben Murach</footer>
+    </div>
+  </body>
+</html>

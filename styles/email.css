@@ -1,0 +1,198 @@
+* {
+  font-family: sans-serif;
+  word-wrap: normal;
+}
+
+body {
+  /* width: 800px; */
+  margin: 0;
+  background-image: url('/images/bats.gif');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: black;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+header {
+  padding: 10px;
+  background-image: linear-gradient(45deg, white 0%, orange 50%, black 100%);
+  border: solid black;
+}
+
+main > h1 {
+  font-size: 26px;
+}
+
+main {
+  display: flex;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+a {
+  color: orange;
+}
+
+a:hover {
+  color: green;
+}
+
+form {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.form-input {
+  width: 100%;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'] {
+  width: 60%;
+  height: 20px;
+  padding: 2px;
+  margin-bottom: 8px;
+}
+
+label {
+  display: inline-block;
+  width: 87px;
+  text-align: right;
+}
+
+.btn {
+  font-size: 0.9em;
+  padding: 0 10px;
+  background-color: orange;
+  border: 3px solid;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+.btn-link {
+  color: black;
+}
+
+.btn-link:visited,
+.btn-link:hover {
+  color: black !important;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  padding: 10px 10px !important;
+  background-image: linear-gradient(-45deg, white 0%, orange 50%, black 100%);
+}
+
+.main-content {
+  flex-grow: 2.5;
+}
+
+.nav_img {
+  width: 75px;
+  float: left;
+}
+
+.card {
+  width: 60vw;
+  border: solid;
+  background-color: white;
+  box-shadow: 0 0 5px 5px black;
+}
+
+.card > main,
+footer {
+  border: solid black;
+  padding: 20px 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.navbar > a {
+  color: white;
+}
+
+.active {
+  color: orange !important;
+}
+
+.navbar > a:hover {
+  background-color: grey;
+}
+
+.sidebar {
+  flex-grow: 0.5;
+  margin-left: 20px;
+  margin-right: 40px;
+  width: 15%;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
+  background-color: orange;
+  margin: 10px 0;
+  border: 3px solid;
+}
+
+li a {
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  * {
+    font-size: 0.5em !important;
+  }
+
+  .nav_img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    background-image: none;
+    border: none;
+  }
+}
+
+@media (max-width: 479px) {
+  header {
+    font-size: 2em;
+  }
+
+  main > h2 {
+    font-size: 1em;
+  }
+}
